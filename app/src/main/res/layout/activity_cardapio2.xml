@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <!-- CABEÇALHO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#242424"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/btnVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:paddingEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizzas Doces"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:text="Escolha seu sabor 🍫"
+            android:textColor="#242424"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <!-- PRIMEIRA LINHA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <!-- CHOCOLATE -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de chocolate"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_chocolate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Chocolate"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 39,90"
+                    android:textColor="#9C4A7C"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdChocolate"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- MORANGO COM CHOCOLATE -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de morango com chocolate"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_morango_chocolate" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Morango c/ Chocolate"
+                    android:textColor="#242424"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 42,90"
+                    android:textColor="#9C4A7C"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdMorango"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- SEGUNDA LINHA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <!-- PAÇOCA -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de paçoca"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_pacoca" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Paçoca"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 40,90"
+                    android:textColor="#9C4A7C"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdPacoca"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- BANANA -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de banana com canela"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_banana" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Banana c/ Canela"
+                    android:textColor="#242424"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 38,90"
+                    android:textColor="#9C4A7C"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdBanana"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- BOTÃO -->
+
+        <Button
+            android:id="@+id/btnFazerPedido"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#9C4A7C"
+            android:text="FAZER PEDIDO 🍫"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8F3"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="25dp">
+
+        <!-- CABEÇALHO -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="#242424"
+            android:gravity="center_vertical"
+            android:paddingStart="15dp">
+
+            <TextView
+                android:id="@+id/btnVoltar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="←"
+                android:textColor="#FFFFFF"
+                android:textSize="30sp"
+                android:paddingEnd="12dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pizzas Salgadas"
+                android:textColor="#FFFFFF"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="20dp"
+            android:text="Escolha seu sabor 🍕"
+            android:textColor="#242424"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <!-- PRIMEIRA LINHA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <!-- CALABRESA -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de calabresa"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_calabresa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Calabresa"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 39,90"
+                    android:textColor="#E85D04"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdCalabresa"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- PORTUGUESA -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza portuguesa"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_portuguesa" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Portuguesa"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 42,90"
+                    android:textColor="#E85D04"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdPortuguesa"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- SEGUNDA LINHA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <!-- FRANGO -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza de frango com catupiry"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_frango" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Frango c/ Catupiry"
+                    android:textColor="#242424"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 41,90"
+                    android:textColor="#E85D04"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdFrango"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+
+            <!-- QUATRO QUEIJOS -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="#FFFFFF"
+                android:elevation="4dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:contentDescription="Pizza quatro queijos"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pizza_quatro_queijos" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Quatro Queijos"
+                    android:textColor="#242424"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="R$ 44,90"
+                    android:textColor="#E85D04"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/edtQtdQueijos"
+                    android:layout_width="105dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="7dp"
+                    android:gravity="center"
+                    android:hint="Quantidade"
+                    android:inputType="number"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- BOTÃO -->
+
+        <Button
+            android:id="@+id/btnFazerPedido"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:backgroundTint="#E85D04"
+            android:text="FAZER PEDIDO 🍕"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

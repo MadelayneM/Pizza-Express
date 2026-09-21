@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF8F3">
+
+    <!-- CABEÇALHO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#242424"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍕"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:text="Pizza Express"
+            android:textColor="#FFFFFF"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- CONTEÚDO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <!-- ÍCONE -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🍕"
+            android:textSize="70sp" />
+
+        <!-- TÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:text="Monte seu pedido"
+            android:textColor="#242424"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- SUBTÍTULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Escolha o tipo de pizza&#10;que deseja pedir:"
+            android:textColor="#777777"
+            android:textSize="16sp" />
+
+
+        <!-- BOTÃO SALGADAS -->
+        <Button
+            android:id="@+id/btnSalgadas"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#E85D04"
+            android:text="🍕  PIZZAS SALGADAS"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <!-- BOTÃO DOCES -->
+        <Button
+            android:id="@+id/btnDoces"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#9C4A7C"
+            android:text="🍫  PIZZAS DOCES"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <!-- RODAPÉ -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center"
+        android:text="Escolha seu sabor favorito ❤️"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+</LinearLayout>
