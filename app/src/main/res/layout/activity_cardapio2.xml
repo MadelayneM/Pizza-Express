@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF8F3"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -13,6 +15,10 @@
         android:paddingBottom="25dp">
 
         <!-- CABEÇALHO -->
+
+
+        <!-- TÍTULO -->
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="65dp"
@@ -20,18 +26,28 @@
             android:gravity="center_vertical"
             android:paddingStart="15dp">
 
-            <TextView
+            <Button
                 android:id="@+id/btnVoltar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFFFFF"
+                android:gravity="center"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:minWidth="0dp"
+                android:minHeight="0dp"
+                android:padding="0dp"
                 android:text="←"
-                android:textColor="#FFFFFF"
-                android:textSize="30sp"
-                android:paddingEnd="12dp" />
+                android:textColor="#000000"
+                android:textSize="34sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
                 android:text="Pizzas Doces"
                 android:textColor="#FFFFFF"
                 android:textSize="21sp"
@@ -39,15 +55,13 @@
 
         </LinearLayout>
 
-
-        <!-- TÍTULO -->
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginTop="22dp"
             android:layout_marginEnd="20dp"
+            android:gravity="center"
             android:text="Escolha seu sabor 🍫"
             android:textColor="#242424"
             android:textSize="22sp"
@@ -78,7 +92,7 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="181dp"
                     android:layout_height="120dp"
                     android:contentDescription="Pizza de chocolate"
                     android:scaleType="centerCrop"
@@ -94,6 +108,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtPrecoChocolate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -129,11 +144,11 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="144dp"
                     android:layout_height="120dp"
                     android:contentDescription="Pizza de morango com chocolate"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/pizza_morango_chocolate" />
+                    android:src="@drawable/pizza_morango" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -145,6 +160,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtPrecoMorango"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -192,7 +208,7 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="181dp"
                     android:layout_height="120dp"
                     android:contentDescription="Pizza de paçoca"
                     android:scaleType="centerCrop"
@@ -208,6 +224,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtPrecoPacoca"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -243,7 +260,7 @@
                 android:padding="10dp">
 
                 <ImageView
-                    android:layout_width="120dp"
+                    android:layout_width="181dp"
                     android:layout_height="120dp"
                     android:contentDescription="Pizza de banana com canela"
                     android:scaleType="centerCrop"
@@ -259,6 +276,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/txtPrecoBanana"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -281,21 +299,42 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnFazerPedido"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginEnd="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#E85D04"
+                android:text="FAZER PEDIDO🍕"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLimpar"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="#FF001D"
+                android:text="LIMPAR PEDIDO"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
 
         <!-- BOTÃO -->
-
-        <Button
-            android:id="@+id/btnFazerPedido"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
-            android:layout_marginEnd="20dp"
-            android:backgroundTint="#9C4A7C"
-            android:text="FAZER PEDIDO 🍫"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp"
-            android:textStyle="bold" />
 
     </LinearLayout>
 
